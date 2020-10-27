@@ -11,10 +11,10 @@ export const rangeInConsole = (start, end) => {
 export const rangeInConsoleWithLimit = (start, end) =>
   rangeInConsole(start, Math.min(end, start + 5));
 
-export const addAge = p => ({
-  ...p,
-  age: p.age + 1
-});
+export const addAge = p => {
+  p.age++;
+  return p;
+};
 
 export const getAuthorName = obj => {
   if (obj && obj.author && obj.author.name) {
