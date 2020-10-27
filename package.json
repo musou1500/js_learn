@@ -1,0 +1,11 @@
+{
+  "name": "js_learn",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "node ./test.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
