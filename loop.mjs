@@ -18,7 +18,7 @@ export const addAge = p => {
 };
 
 export const getAuthorName = obj => {
-  if (obj && obj.author && obj.author.name) {
+  if (obj && obj.author && typeof obj.author.name === 'string') {
     return obj.author.name;
   } else {
     return "no name";
