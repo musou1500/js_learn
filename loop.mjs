@@ -1,6 +1,7 @@
 export const rangeInConsole = (start, end) => {
   if (start > end) {
     console.error("endにはstartより大きい値を指定してください");
+    return;
   }
 
   for (let i = start; i < end; i++) {
