@@ -1,16 +1,27 @@
 export const rangeInConsole = (start, end) => {
-  // 演習問題1
+  if (start > end) {
+    console.error("endにはstartより大きい値を指定してください");
+    return;
+  }
+
+  for (let i = start; i < end; i++) {
+    console.log(i);
+  }
 };
 
-export const rangeInConsoleWithLimit = (start, end) => {
-  // 演習問題2
-};
+export const rangeInConsoleWithLimit = (start, end) =>
+  rangeInConsole(start, Math.min(end, start + 5));
 
 export const addAge = p => {
-  // 演習問題3
+  p.age++;
+  return p;
 };
 
 export const getAuthorName = obj => {
-  // 演習問題4
+  if (obj && obj.author && typeof obj.author.name === 'string') {
+    return obj.author.name;
+  } else {
+    return "no name";
+  }
 };
 
